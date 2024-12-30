@@ -1,0 +1,1746 @@
+<html>
+    <head>
+        <title>stick man</title>
+    </head>
+    <style>
+        body{
+            position: relative;
+        }
+        .darkbluesky{
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            top: 0px;
+            background-color: rgb(20,20,140);
+        }
+        .seconddarkbluesky{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(20,20,143);
+            top: 50px;
+            position: absolute;
+        }
+        .thirddarkbluesky{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(20,20,148);
+            top: 100px;
+            position: absolute;
+        }
+        .fourthdarkbluesky{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(20,20,155);
+            top: 150px;
+            position: absolute;
+        }
+        .fifthdarkbluesky{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(20,20,160);
+            top: 200px;
+            position: absolute;
+        }
+        .sixthdarkbluesky{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(20,20,170);
+            top: 250px;
+            position: absolute;
+        }
+        .seventhdarkbluesky{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(20,20,180);
+            top: 300px;
+            position: absolute;
+        }
+        .eighthdarkbluesky{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(20,20,185);
+            top: 350px;
+            position: absolute;
+        }
+        .stickmanhead{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            left: 80px;
+            top: 305px;
+        }
+        .stickmanbody{
+            width: 10px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: black;
+            position: absolute;
+            left: 90px;
+            top: 335px;
+        }
+        .stickmanrighthand{
+            width: 30px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: black;
+            position: absolute;
+            left: 90px;
+            top: 340px;
+            rotate: 30deg;
+        }
+        .stickmanlefthand{
+            width: 30px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: black;
+            position: absolute;
+            left: 70px;
+            top: 340px;
+            rotate: 140deg;
+        }
+        .stickmanleftleg{
+            width: 30px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: black;
+            position: absolute;
+            left: 70px;
+            top: 384px;
+            rotate: 140deg;
+        }
+        .stickmanrightleg{
+            width: 30px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: black;
+            position: absolute;
+            left: 90px;
+            top: 385px;
+            rotate: 35deg;
+        }
+        .road{
+            width: 100%;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+            top: 400px;
+        }
+        .firstbuilding{
+            width: 130px;
+            height: 300px;
+            background-color: black;
+            position: absolute;
+            left: 200px;
+            top: 100px;
+        }
+        .firstbuildingfirstlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 10px;
+            left: 10px;
+            background-color: rgb(220, 232, 233);
+        }
+        .firstbuildingsecondlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 10px;
+            left: 40px;
+            background-color: rgb(220, 232, 233);
+        }
+        .firstbuildingthirdlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 10px;
+            left: 70px;
+            background-color: rgb(220, 232, 233);
+        }
+        .firstbuildingfourthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 10px;
+            left: 100px;
+            background-color: rgb(220, 232, 233);
+        }
+        .firstbuildingfifthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 40px;
+            left: 10px;
+            background-color: rgb(220, 232, 233);
+        }
+        .firstbuildingsixthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 40px;
+            left: 40px;
+            background-color: rgb(220, 232, 233);
+        }
+        .firstbuildingseventhlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 40px;
+            left: 70px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingeighthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 40px;
+            left: 100px;
+            background-color: rgb(220, 232, 233);        
+        }
+        .firstbuildingninthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 70px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingtenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 70px;
+            left: 40px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingeleventhlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 70px;
+            left: 70px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingtwelthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 70px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingthirtheenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 100px;
+            left: 10px;
+            background-color: rgb(220, 232, 233);
+        }
+        .firstbuildingfourteenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 100px;
+            left: 40px;
+            background-color: rgb(220, 232, 233);
+        }
+        .firstbuildingfifteenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 100px;
+            left: 70px;
+            background-color: rgb(220, 232, 233);
+        }
+        .firstbuildingsixteenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 100px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingseventeenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 130px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingeightteenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 130px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingnineteenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 160px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingtwenty{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 160px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingtwentyone{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 190px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingtwentytwo{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 220px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingtwentythree{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 250px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingtwentyfour{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 190px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingtwentyfive{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 220px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingtwentysix{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 250px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingtwentyseven{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 130px;
+            left: 40px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingtwentyeight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 130px;
+            left: 70px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingtwentynine{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 280px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingthirty{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 280px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .firstbuildingdoor{
+            position: absolute;
+            height: 140px;
+            width: 50px;
+            top: 160px;
+            left: 40px;
+            background-color: rgb(220,232,233);
+        }
+        .streetlight{
+            width: 30px;
+            height: 150px;
+            position: absolute;
+            left: 400px;
+            top: 250px;
+        }
+        .streetlightstick{
+            width: 3px;
+            height: 100px;
+            background-color: black;
+            position: absolute;
+            left: 13px;
+            top: 50px;
+        }
+        .streetlightbottom{
+            width: 10px;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+            left: 10px;
+            top: 130px;
+        }
+        .streetlighttopbottom{
+            width: 11px;
+            height: 3px;
+            background-color: black;
+            position: absolute;
+            left: 9px;
+            top: 55px;
+        }
+        .streetlighttoptopbottom{
+            width: 11px;
+            height: 3px;
+            background-color: black;
+            position: absolute;
+            left: 9px;
+            top: 50px;
+        }
+        .streetlightbulb{
+            width: 15px;
+            height: 15px;
+            rotate: 132deg;
+            background-color: black;
+            border: 3px solid black;
+            position: absolute;
+            left: 3px;
+            top: 25px;
+            animation: 2s streetlightbulbcolor infinite;
+        }
+        @keyframes streetlightbulbcolor {
+            10%{
+                background-color: white;
+            }
+            20%{
+                background-color: black;
+            }
+            30%{
+                background-color: white;
+            }
+            70%{
+                background-color: black;
+            }
+            80%{
+                background-color: white;
+            }
+            90%{
+                background-color: black;
+            }
+            95%{
+                background-color: white;
+            }
+            100%{
+                background-color: black;
+            }
+        }
+        .secondbuilding{
+            width: 130px;
+            height: 300px;
+            background-color: black;
+            position: absolute;
+            left: 480px;
+            top: 100px;
+        }
+        .secondbuildingfirstlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 10px;
+            left: 10px;
+            background-color: rgb(220, 232, 233);
+        }
+        .secondbuildingsecondlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 10px;
+            left: 40px;
+            background-color: rgb(220, 232, 233);
+        }
+        .secondbuildingthirdlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 10px;
+            left: 70px;
+            background-color: rgb(220, 232, 233);
+        }
+        .secondbuildingfourthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 10px;
+            left: 100px;
+            background-color: rgb(220, 232, 233);
+        }
+        .secondbuildingfifthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 40px;
+            left: 10px;
+            background-color: rgb(220, 232, 233);
+        }
+        .secondbuildingsixthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 40px;
+            left: 40px;
+            background-color: rgb(220, 232, 233);
+        }
+        .secondbuildingseventhlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 40px;
+            left: 70px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingeighthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 40px;
+            left: 100px;
+            background-color: rgb(220, 232, 233);        
+        }
+        .secondbuildingninthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 70px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingtenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 70px;
+            left: 40px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingeleventhlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 70px;
+            left: 70px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingtwelthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 70px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingthirtheenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 100px;
+            left: 10px;
+            background-color: rgb(220, 232, 233);
+        }
+        .secondbuildingfourteenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 100px;
+            left: 40px;
+            background-color: rgb(220, 232, 233);
+        }
+        .secondbuildingfifteenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 100px;
+            left: 70px;
+            background-color: rgb(220, 232, 233);
+        }
+        .secondbuildingsixteenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 100px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingseventeenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 130px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingeightteenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 130px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingnineteenthlight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 160px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingtwenty{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 160px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingtwentyone{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 190px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingtwentytwo{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 220px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingtwentythree{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 250px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingtwentyfour{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 190px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingtwentyfive{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 220px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingtwentysix{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 250px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingtwentyseven{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 130px;
+            left: 40px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingtwentyeight{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 130px;
+            left: 70px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingtwentynine{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 280px;
+            left: 10px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingthirty{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 280px;
+            left: 100px;
+            background-color: rgb(220,232,233);
+        }
+        .secondbuildingdoor{
+            position: absolute;
+            height: 140px;
+            width: 50px;
+            top: 160px;
+            left: 40px;
+            background-color: rgb(220,232,233);
+        }
+         .secondbuildingfirsttop{
+            position: absolute;
+            background-color: black;
+            top: -20px;
+            left: 15px;
+            height: 20px;
+            width: 100px;
+        }
+        .secondbuildingsecondtop{
+            position: absolute;
+            background-color: black;
+            top: -40px;
+            left: 25px;
+            height: 20px;
+            width: 80px;
+        }
+        .secondbuildingthirdtop{
+            position: absolute;
+            background-color: black;
+            top: -60px;
+            left: 35px;
+            height: 20px;
+            width: 60px;
+        }
+        .secondbuildingfourthtop{
+            position: absolute;
+            background-color: black;
+            top: -80px;
+            left:45px;
+            height: 20px;
+            width: 40px;
+        }
+        body:hover{
+            transition: 0.5s;
+            background-color: rgb(230,40,40);
+        }
+        body:hover > .road{
+            transition: 0.5s;
+            top: 648px;
+        }
+        body:hover > .darkbluesky{
+            display: none;
+        }
+        body:hover > .firstbuilding{
+            display: none;
+        }
+        body:hover > .secondbuilding{
+            display: none;
+        }
+        body:hover > .streetlight{
+            display: none;
+        }
+        body:hover > .darkbluebackground{
+            display: none;
+        }
+        body:hover > .stickmanhead{
+            transition: 1s;
+            top: 545px;
+        }
+        body:hover > .stickmanlefthand{
+            transition: 0.9s;
+            top: 580px;
+        }
+        body:hover > .stickmanrighthand{
+            transition: 0.9s;
+            top: 580px;
+        }
+        body:hover > .stickmanbody{
+            transition: 0.8s;
+            top: 580px;
+            left: 90px;
+        }
+        body:hover > .stickmanleftleg{
+            transition: 0.7s;
+            top: 632px;
+        }
+        body:hover > .stickmanrightleg{
+            transition: 0.7s;
+            top: 632px;
+        }
+        body:hover  .monster{
+            transition: 2s;
+            position: absolute;
+            top: 450px;
+            left: 400px;
+            animation: 1s hellow;
+            z-index: -3;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(230,40,40);
+        }
+       @keyframes hellow {
+            0%{
+                background-color: white;
+            }
+            50%{
+                background-color: rgb(230,40,40);
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover  .monsterhead{
+            border-radius: 50%;
+            position: absolute;
+            left: 80px;
+            top: 0px;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(230,40,40);
+            z-index: 1;
+            animation: 1.8s stickmanmonsterhead;
+        }
+        @keyframes stickmanmonsterhead {
+            0%{
+                background-color: white;
+            }
+            28%{
+                background-color: rgb(230,40,40);
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: white;
+            }
+            90%{
+                background-color: white;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover .monsterbody{
+            border-radius: 10px;
+            position: absolute;
+            left: 95px;
+            top: 35px;
+            width: 10px;
+            height: 100px;
+            background-color: rgb(230,40,40);
+            z-index: 1;
+            animation: 1.8s stickmanmonsterbody;
+        }
+        @keyframes stickmanmonsterbody{
+            0%{
+                background-color: white;
+            }
+            28%{
+                background-color: rgb(230,40,40);
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: white;
+            }
+            90%{
+                background-color: white;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover .monsterleftharm{
+            border-radius: 10px;
+            position: absolute;
+            left: 75px;
+            top: 40px;
+            width: 10px;
+            height: 60px;
+            background-color: rgb(230,40,40);
+            z-index: 1;
+            rotate: 50deg;
+            animation: 1.8s stickmanmonsterleftharm;
+        }
+        @keyframes  stickmanmonsterleftharm{
+            0%{
+                background-color: white;
+            }
+            28%{
+                background-color: rgb(230,40,40);
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: white;
+            }
+            90%{
+                background-color: white;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover .monsterrightharm{
+            border-radius: 10px;
+            position: absolute;
+            left: 115px;
+            top: 40px;
+            width: 10px;
+            height: 60px;
+            background-color: rgb(230,40,40);
+            z-index: 1;
+            rotate: 130deg;
+            animation: 1.8s stickmanmonsterrightharm;
+        }
+        @keyframes stickmanmonsterrightharm{
+            0%{
+                background-color: white;
+            }
+            28%{
+                background-color: rgb(230,40,40);
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: white;
+            }
+            90%{
+                background-color: white;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover .monsterrighthand{
+            border-radius: 10px;
+            position: absolute;
+            left: 135px;
+            top: 83px;
+            width: 10px;
+            height: 40px;
+            background-color: rgb(230,40,40);
+            z-index: 1;
+            animation: 1.8s stickmanmonsterrighthand;
+        }
+        @keyframes stickmanmonsterrighthand {
+            0%{
+                background-color: white;
+            }
+            28%{
+                background-color: rgb(230,40,40);
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: white;
+            }
+            90%{
+                background-color: white;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover .monsterlefthand{
+            border-radius: 10px;
+            position: absolute;
+            top: 83px;
+            left: 55px;
+            width: 10px;
+            height: 40px;
+            background-color: rgb(230,40,40);
+            z-index: 1;
+            animation: 1.8s stickmanmonsterlefthand;
+        }
+        @keyframes stickmanmonsterlefthand{
+            0%{
+                background-color: white;
+            }
+            28%{
+                background-color: rgb(230,40,40);
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: white;
+            }
+            90%{
+                background-color: white;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover .monsterleftleg{
+            border-radius: 10px;
+            position: absolute;
+            top: 120px;
+            left: 73px;
+            width: 10px;
+            height: 85px;
+            rotate: 35deg;
+            background-color: rgb(230,40,40);
+            z-index: 1;
+            animation: 1.8s stickmanmonsterleftleg;
+        }
+        @keyframes stickmanmonsterleftleg{
+            0%{
+                background-color: white;
+            }
+            28%{
+                background-color: rgb(230,40,40);
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: white;
+            }
+            90%{
+                background-color: white;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover .monsterrightleg{
+            border-radius: 10px;
+            position: absolute;
+            top: 120px;
+            left: 118px;
+            width: 10px;
+            height: 85px;
+            rotate: 145deg;
+            background-color: rgb(230,40,40);
+            z-index: 1;
+            animation: 1.8s stickmanmonsterrightleg;
+        }
+        @keyframes stickmanmonsterrightleg{
+            0%{
+                background-color: white;
+            }
+            28%{
+                background-color: rgb(230,40,40);
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: white;
+            }
+            90%{
+                background-color: white;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover .monsterknifefirstline{
+            position: absolute;
+            top: 107px;
+            left: 59px;
+            height: 30px;
+            width: 2px;
+            background-color: rgb(230,40,40);
+            rotate: 90deg;
+            animation: 1.8s stickmanmonsterknifefirstline;
+        }
+        @keyframes stickmanmonsterknifefirstline {
+            0%{
+                background-color: white;
+            }
+            28%{
+                background-color: rgb(230,40,40);
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: white;
+            }
+            90%{
+                background-color: white;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover .monsterknifesecondline{
+            position: absolute;
+            top: 120px;
+            left: 65px;
+            height: 30px;
+            width: 2px;
+            background-color: rgb(230,40,40);
+            rotate: 30deg;
+            animation: 1.8s stickmanmonsterknifesecondline;
+        }
+        @keyframes stickmanmonsterknifesecondline {
+            0%{
+                background-color: white;
+            }
+            28%{
+                background-color: rgb(230,40,40);
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: white;
+            }
+            90%{
+                background-color: white;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover .monsterknifethirdline{
+            position: absolute;
+            top: 120px;
+            left: 52px;
+            height: 30px;
+            width: 2px;
+            background-color: rgb(230,40,40);
+            rotate: 147deg;
+            animation: 1.8s stickmanmonsterknifethirdline;
+        }
+        @keyframes stickmanmonsterknifethirdline {
+            0%{
+                background-color: white;
+            }
+            28%{
+                background-color: rgb(230,40,40);
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: white;
+            }
+            90%{
+                background-color: white;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        /*body:hover .stickmanknifefirstline{
+            position: absolute;
+            top: 583px;
+            left: 117px;
+            background-color: black;
+            height: 20px;
+            width: 2px;
+            rotate: 40deg;
+            animation: 1.7s stickmanknifefirstline;
+            z-index: -1;
+        }
+        @keyframes stickmanknifefirstline {
+            0%{
+                background-color: white;
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: rgb(230,40,40);
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }*/
+        /*body:hover .stickmanknifesecondline{
+            z-index: -1;
+            position: absolute;
+            top: 583px;
+            left: 127px;
+            background-color: black;
+            height: 20px;
+            width: 2px;
+            rotate: 160deg;
+            animation: 1.7s stickmanknifesecondline;
+        }
+        @keyframes stickmanknifesecondline {
+            0%{
+                background-color: white;
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: rgb(230,40,40);
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }*/
+        /*body:hover .stickmanknifethirdline{
+            position: absolute;
+            top: 592px;
+            left: 120px;
+            background-color: black;
+            height: 20px;
+            width: 2px;
+            rotate: 270deg;
+            animation: 1.7s stickmanknifethirdline;
+            z-index: -1;
+        }
+        @keyframes stickmanknifethirdline {
+            0%{
+                background-color: white;
+            }
+            30%{
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                background-color: rgb(230,40,40);
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }*/
+        body:hover .stickmanknifethirdline{
+            position: absolute;
+            top: 450px;
+            left: 480px;
+            background-color: rgb(230,40,40);
+            height: 20px;
+            width: 2px;
+            rotate: 270deg;
+            animation: 1.7s stickmanknifethirdline;
+            z-index: -1;
+        }
+        @keyframes stickmanknifethirdline {
+            0%{
+                top: 592;
+                left: 120px;
+                background-color: white;
+            }
+            30%{
+                top: 592px;
+                left: 120px;
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                top: 592px;
+                left: 120px;
+                background-color: rgb(230,40,40);
+                z-index: -1;
+            }
+            70%{
+                top: 592px;
+                left: 120px;
+                background-color: black;
+            }
+            90%{
+                top: 450px;
+                left: 480px;
+                rotate: 270deg;
+                background-color: black;
+            }
+            95%{
+                top: 450px;
+                left: 480px;
+                rotate: 270deg;
+                background-color: black;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover .stickmanknifesecondline{
+            position: absolute;
+            top: 470px;
+            left: 480px;
+            background-color: rgb(230,40,40);
+            height: 20px;
+            width: 2px;
+            rotate: 270deg;
+            z-index: -1;
+            animation: 1.7s stickmanknifesecondline;
+        }
+        @keyframes stickmanknifesecondline {
+            0%{
+                top: 583px;
+                left: 127px;
+                background-color: white;
+                rotate: 160deg;
+            }
+            30%{
+                rotate: 160deg;
+                top: 583px;
+                left: 127px;
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                rotate: 160deg;
+                top: 583px;
+                left: 127px;
+                background-color: rgb(230,40,40);
+            }
+            60%{
+                rotate: 160deg;
+                top: 583;
+                left: 127px;
+                background-color: black;
+            }
+            70%{
+                rotate: 160deg;
+                top: 583px;
+                left: 127px;
+                background-color: black;
+            }
+            90%{
+                rotate:270deg ;
+                top: 470px;
+                left: 480px;
+                background-color: black;
+            }
+            95%{
+                top: 470px;
+                left: 480px;
+                rotate: 270deg;
+                background-color: black;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        body:hover .stickmanknifefirstline{
+            position: absolute;
+            top: 460px;
+            left: 480px;
+            background-color: rgb(230,40,40);
+            height: 20px;
+            width: 2px;
+            rotate: 270deg;
+            animation: 1.7s stickmanknifefirstline;
+            z-index: -1;
+        }
+        @keyframes stickmanknifefirstline {
+            0%{
+                top: 583px;
+                left: 117px;
+                background-color: white;
+                rotate: 40deg;
+            }
+            30%{
+                top: 583px;
+                left: 117px;
+                rotate: 40deg;
+                background-color: rgb(230,40,40);
+            }
+            50%{
+                top: 583px;
+                left: 117px;
+                rotate: 40deg;
+                background-color: rgb(230,40,40);
+            }
+            60%{
+                top: 583px;
+                left: 117px;
+                rotate: 40deg;
+                background-color: black;
+            }
+            70%{
+                top: 583px;
+                left: 117px;
+                rotate: 40deg;
+                background-color: black;
+            }
+            90%{
+                top: 460px;
+                left: 480px;
+                rotate: 270deg;
+                background-color: black;
+            }
+            95%{
+                top: 460px;
+                left: 480px;
+                rotate: 270px;
+                background-color: black;
+            }
+            100%{
+                background-color: rgb(230,40,40);
+            }
+        }
+        .moon{
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background-color: azure;
+            border-radius: 50%;
+            top: 30px;
+            left: 20px;
+        }
+        .firststarhorizontal{
+            background-color: white;
+            width: 7px;
+            height: 1px;
+            position: absolute;
+            top: 40px;
+            left: 120px;
+        }
+        .firststarvertical{
+            background-color: white;
+            width: 1px;
+            height: 7px;
+            position: absolute;
+            top: 37px;
+            left: 123px;
+        }
+        .secondstarhorizontal{
+            background-color: white;
+            width: 7px;
+            height: 1px;
+            position: absolute;
+            top: 20px;
+            left: 220px;
+        }
+        .secondstarvertical{
+            background-color: white;
+            width: 1px;
+            height: 7px;
+            position: absolute;
+            top: 17px;
+            left: 223px;
+        }
+        .thirdstarhorizontal{
+            background-color: white;
+            width: 7px;
+            height: 1px;
+            position: absolute;
+            top: 60px;
+            left: 320px;
+        }
+        .thirdstarvertical{
+            background-color: white;
+            width: 1px;
+            height: 7px;
+            position: absolute;
+            top: 57px;
+            left: 323px;
+        }
+        .fourthstarhorizontal{
+            background-color: white;
+            width: 7px;
+            height: 1px;
+            position: absolute;
+            top: 80px;
+            left: 170px;
+        }
+        .fourthstarvertical{
+            background-color: white;
+            width: 1px;
+            height: 7px;
+            position: absolute;
+            top: 77px;
+            left: 173px;
+        }
+        .fifthstarhorizontal{
+            background-color: white;
+            width: 7px;
+            height: 1px;
+            position: absolute;
+            top: 120px;
+            left: 100px;
+        }
+        .fifthstarvertical{
+            background-color: white;
+            width: 1px;
+            height: 7px;
+            position: absolute;
+            top: 117px;
+            left: 103px;
+        }
+        .sixthstarhorizontal{
+            background-color: white;
+            width: 7px;
+            height: 1px;
+            position: absolute;
+            top: 80px;
+            left: 260px;
+        }
+        .sixthstarvertical{
+            background-color: white;
+            width: 1px;
+            height: 7px;
+            position: absolute;
+            top: 77px;
+            left: 263px;
+        }
+        .seventhstarhorizontal{
+            background-color: white;
+            width: 7px;
+            height: 1px;
+            position: absolute;
+            top: 120px;
+            left: 400px;
+        }
+        .seventhstarvertical{
+            background-color: white;
+            width: 1px;
+            height: 7px;
+            position: absolute;
+            top: 117px;
+            left: 403px;
+        }
+        .eighthstarhorizontal{
+            background-color: white;
+            width: 7px;
+            height: 1px;
+            position: absolute;
+            top: 40px;
+            left: 370px;
+        }
+        .eighthstarvertical{
+            background-color: white;
+            width: 1px;
+            height: 7px;
+            position: absolute;
+            top: 37px;
+            left: 373px;
+        }
+        .ninthstarhorizontal{
+            background-color: white;
+            width: 7px;
+            height: 1px;
+            position: absolute;
+            top: 70px;
+            left: 420px;
+        }
+        .ninthstarvertical{
+            background-color: white;
+            width: 1px;
+            height: 7px;
+            position: absolute;
+            top: 67px;
+            left: 423px;
+        }
+        .tenthstarhorizontal{
+            background-color: white;
+            width: 7px;
+            height: 1px;
+            position: absolute;
+            top: 90px;
+            left: 350px;
+        }
+        .tenthstarvertical{
+            background-color: white;
+            width: 1px;
+            height: 7px;
+            position: absolute;
+            top: 87px;
+            left: 353px;
+        }
+        .eleventhstarvertical{
+            background-color: white;
+            width: 7px;
+            height: 1px;
+            position: absolute;
+            top: 40px;
+            left: 270px;
+        }
+        .eleventhstarhorizontal{
+            background-color: white;
+            width: 1px;
+            height: 7px;
+            position: absolute;
+            top: 37px;
+            left: 273px;
+        }
+        .twelthstarhorizontal{
+            background-color: white;
+            width: 7px;
+            height: 1px;
+            position: absolute;
+            top: 40px;
+            left: 450px;
+        }
+        .twelthstarvertical{
+            background-color: white;
+            width: 1px;
+            height: 7px;
+            position: absolute;
+            top: 37px;
+            left: 453px;
+        }
+        body:hover .star{
+            display: none;
+        }
+
+    </style>    
+    <body>
+        <div class="darkbluebackground">
+        <div class="darkbluesky"></div>
+        <div class="seconddarkbluesky"></div>
+        <div class="thirddarkbluesky"></div>
+        <div class="fourthdarkbluesky"></div>
+        <div class="fifthdarkbluesky"></div>
+        <div class="sixthdarkbluesky"></div>
+        <div class="seventhdarkbluesky"></div>
+        <div class="eighthdarkbluesky"></div>
+        <div class="moon"></div>
+        </div>
+        <div class="star">
+        <div class="firststarhorizontal"></div>
+        <div class="firststarvertical"></div>
+        <div class="secondstarhorizontal"></div>
+        <div class="secondstarvertical"></div>
+        <div class="thirdstarhorizontal"></div>
+        <div class="thirdstarvertical"></div>
+        <div class="fourthstarhorizontal"></div>
+        <div class="fourthstarvertical"></div>
+        <div class="fifthstarvertical"></div>
+        <div class="fifthstarhorizontal"></div>
+        <div class="sixthstarhorizontal"></div>
+        <div class="sixthstarvertical"></div>
+        <div class="seventhstarhorizontal"></div>
+        <div class="seventhstarvertical"></div>
+        <div class="eighthstarhorizontal"></div>
+        <div class="eighthstarvertical"></div>
+        <div class="ninthstarhorizontal"></div>
+        <div class="ninthstarvertical"></div>
+        <div class="tenthstarhorizontal"></div>
+        <div class="tenthstarvertical"></div>
+        <div class="eleventhstarvertical"></div>
+        <div class="eleventhstarhorizontal"></div>
+        <div class="twelthstarvertical"></div>
+        <div class="twelthstarhorizontal"></div>
+        </div>
+        <div class="stickmanhead"></div>
+        <div class="stickmanbody"></div>
+        <div class="stickmanlefthand"></div>
+        <div class="stickmanrighthand"></div>
+        <div class="stickmanleftleg"></div>
+        <div class="stickmanrightleg"></div>
+        <div class="stickmanknifefirstline"></div>
+        <div class="stickmanknifesecondline"></div>
+        <div class="stickmanknifethirdline"></div>
+        <div class="road"></div>
+        <div class="firstbuilding">
+            <div class="firstbuildingfirstlight"></div>
+            <div class="firstbuildingsecondlight"></div>
+            <div class="firstbuildingthirdlight"></div>
+            <div class="firstbuildingfourthlight"></div>
+            <div class="firstbuildingfifthlight"></div>
+            <div class="firstbuildingsixthlight"></div>
+            <div class="firstbuildingseventhlight"></div>
+            <div class="firstbuildingeighthlight"></div>
+            <div class="firstbuildingninthlight"></div>
+            <div class="firstbuildingtenthlight"></div>
+            <div class="firstbuildingeleventhlight"></div>
+            <div class="firstbuildingtwelthlight"></div>
+            <div class="firstbuildingthirtheenthlight"></div>
+            <div class="firstbuildingfourteenthlight"></div>
+            <div class="firstbuildingfifteenthlight"></div>
+            <div class="firstbuildingsixteenthlight"></div>
+            <div class="firstbuildingseventeenthlight"></div>
+            <div class="firstbuildingeightteenthlight"></div>
+            <div class="firstbuildingnineteenthlight"></div>
+            <div class="firstbuildingtwenty"></div>
+            <div class="firstbuildingtwentyone"></div>
+            <div class="firstbuildingtwentytwo"></div>
+            <div class="firstbuildingtwentythree"></div>
+            <div class="firstbuildingtwentyfour"></div>
+            <div class="firstbuildingtwentyfive"></div>
+            <div class="firstbuildingtwentysix"></div>
+            <div class="firstbuildingdoor"></div>
+            <div class="firstbuildingtwentyseven"></div>
+            <div class="firstbuildingtwentyeight"></div>
+            <div class="firstbuildingtwentynine"></div>
+            <div class="firstbuildingthirty"></div>
+        </div>
+        <div class="streetlight">
+            <div class="streetlightbottom"></div>
+            <div class="streetlightstick"></div>
+            <div class="streetlighttopbottom"></div>
+            <div class="streetlighttoptopbottom"></div>
+            <div class="streetlightbulb"></div>
+        </div>
+        <div class="secondbuilding">
+            <div class="secondbuildingfirsttop"></div>
+            <div class="secondbuildingsecondtop"></div>
+            <div class="secondbuildingthirdtop"></div>
+            <div class="secondbuildingfirstlight"></div>
+            <div class="secondbuildingsecondlight"></div>
+            <div class="secondbuildingthirdlight"></div>
+            <div class="secondbuildingfourthlight"></div>
+            <div class="secondbuildingfifthlight"></div>
+            <div class="secondbuildingsixthlight"></div>
+            <div class="secondbuildingseventhlight"></div>
+            <div class="secondbuildingeighthlight"></div>
+            <div class="secondbuildingninthlight"></div>
+            <div class="secondbuildingtenthlight"></div>
+            <div class="secondbuildingeleventhlight"></div>
+            <div class="secondbuildingtwelthlight"></div>
+            <div class="secondbuildingthirtheenthlight"></div>
+            <div class="secondbuildingfourteenthlight"></div>
+            <div class="secondbuildingfifteenthlight"></div>
+            <div class="secondbuildingsixteenthlight"></div>
+            <div class="secondbuildingseventeenthlight"></div>
+            <div class="secondbuildingeightteenthlight"></div>
+            <div class="secondbuildingnineteenthlight"></div>
+            <div class="secondbuildingtwenty"></div>
+            <div class="secondbuildingtwentyone"></div>
+            <div class="secondbuildingtwentytwo"></div>
+            <div class="secondbuildingtwentythree"></div>
+            <div class="secondbuildingtwentyfour"></div>
+            <div class="secondbuildingtwentyfive"></div>
+            <div class="secondbuildingtwentysix"></div>
+            <div class="secondbuildingdoor"></div>
+            <div class="secondbuildingtwentyseven"></div>
+            <div class="secondbuildingtwentyeight"></div>
+            <div class="secondbuildingtwentynine"></div>
+            <div class="secondbuildingthirty"></div>
+        </div>
+        <div class="monster">
+            <div class="monsterhead"></div>
+            <div class="monsterbody"></div>
+            <div class="monsterleftharm"></div>
+            <div class="monsterrightharm"></div>
+            <div class="monsterrighthand"></div>
+            <div class="monsterlefthand"></div>
+            <div class="monsterleftleg"></div>
+            <div class="monsterrightleg"></div>
+            <div class="monsterknifefirstline"></div>
+            <div class="monsterknifesecondline"></div>
+            <div class="monsterknifethirdline"></div>
+        </div>
+    </body>
+</html>
