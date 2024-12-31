@@ -5,6 +5,18 @@
     <style>
         body{
             position: relative;
+            animation: 1s earthquake infinite;
+        }
+         @keyframes earthquake {
+            0%{
+                left: 1px;
+            }
+            50%{
+                left: -1px;
+            }
+            100%{
+                left: 0px;
+            }
         }
         .darkbluesky{
             width: 100%;
